@@ -43,6 +43,7 @@ text-align: center;
   padding-bottom: 200px;
   margin: 0 auto;
   background-color: #2F303A;
+  width: 1600px;
 }
 
 
@@ -91,7 +92,7 @@ header {
   margin-right: 93px;
   }
 
-.container-buttons li {
+.container-button {
   display: inline-block;
   font-family: Roboto;
   font-style: normal;
@@ -101,9 +102,7 @@ header {
   color: var(--main-colour);
   background-color: #F5F4FA;
   border-radius: 4px; 
-  width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  
  }
 
 .container-buttons:hover,
@@ -152,7 +151,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color1 inherit;
 }
 }
 .darkFontSecond {
@@ -168,11 +167,11 @@ a {
 .page {
   border: 1px solid black;
 }
-  .page-header {
-    border-bottom: 1px solid #ECECEC;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
+header {
+border-bottom: 1px solid #ECECEC;
+padding-top: 24px;
+padding-bottom: 24px;
+}
 
 /*section {
   background: #e5e5e5;*/
@@ -183,10 +182,12 @@ h1 {
  list-style: none;
  margin: 0;
  padding: 0;
+ margin-top: 0;
+ margin-bottom: 0;
 }
 .container {
   display: flex;
-  width: 1200px;
+  width: 1600px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -247,7 +248,9 @@ width: 294px;
 display: flex;
 margin: auto;
 width: 611px;
-align-items: center;
+justify-content: center;
+padding-top: 100px;
+padding-bottom: 56px;
 }
 
 .button-first:hover,
@@ -280,7 +283,6 @@ h3{
  margin-bottom: 10px;
 }
 p{
-  list-style: none;
  margin: 0;
  padding: 0;
 }
@@ -288,26 +290,26 @@ p{
 .small-border{
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 60px;
-  padding-right: 55px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .small-border-two{
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 62px;
-  padding-right: 61px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .small-border-three{
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 60px;
-  padding-right: 59px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .small-border-four{
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 65px;
-  padding-right: 68px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .details-section{
   padding-top: 94px;
@@ -318,7 +320,6 @@ p{
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  margin-top: 94px;
 }
 .container-details h3 {
   font-family: Roboto;
@@ -369,12 +370,13 @@ padding-bottom: 94px;
 .card-set >.item:not(:last-child) {
 margin-right: 30px;
 }
-
+.item {
+  display: block;
+}
 .container-team{
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
   background-color: #F5F4FA;
 }
 
@@ -384,10 +386,12 @@ margin-right: 30px;
   background-color:#F5F4FA;
 }
 .my-team {
-  display: flex;
-  margin: 0;
-  padding: 0;
+ display: flex;
+margin: 0;
+padding: 0;
+list-style: none;
 }
+
 .my-team > .team-items:not(:last-child) {
 margin-right: 30px;
 }
@@ -426,17 +430,26 @@ h2 {
   color: var(--p-color);
 }
 
-.container-adr{
-  background-color: #2f303a;
-}
+
 .last-container{
-  width: 1200px;
+  width: 1600px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   padding: 0;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
+.last-container p{
+Font: Roboto;
+Weight: 400px;
+Style: normal;
+Size: 14px;
+color: #ffffff;
+margin-top: 20px;
+margin-left: 215px;
+}
 .container-adress {
   font-family: Roboto;
   font-style: normal;
@@ -444,6 +457,7 @@ h2 {
   font-size: 14px;
   line-height: 1.5;
   color: white;
+  margin-left: 215px;
 }
 
 .container-adress li {
@@ -461,14 +475,15 @@ h2 {
   font-size: 26px;
   line-height: 1.2;
   margin-top: 60px;
+  margin-left: 215px;
+}
+
+.one {
+  margin-bottom: 9px;
 }
 .website-name-footer a {
   padding-top: 60px;
   margin-bottom: 20px;
-}
-.container-pictures{
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .bigger-section{
@@ -490,18 +505,23 @@ display: flex;
 flex-wrap: wrap;
 margin-left: -30px;
 margin-top: -30px;
+width: 1170px;
+margin: 0 auto;
 }
 
-.first-pics >.last-pics{
-flex-basis: calc(100% /3 -30);
-margin-left: 30px;
-margin-top: 30px;
+.first-pics >.last-pic{
+outline: 1px solid black;
+margin-right: 30px;
+flex-basis: calc(100%/3 -30);
+margin-bottom: 30px;
+
 }
 
 .last-pics {
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 box-sizing: border-box;
+justify-content: space-between
 }
 
 .team-items {
