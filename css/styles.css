@@ -474,7 +474,7 @@ margin-bottom: 9px;
 }
 
 .bigger-section{
-padding-top: 56px;
+padding-top: 94px;
 padding-bottom: 94px;
 }
 .big-border {
@@ -482,6 +482,12 @@ padding-bottom: 94px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.container-pictures{
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .first-pics{
