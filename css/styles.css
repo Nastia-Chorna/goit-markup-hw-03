@@ -487,7 +487,7 @@ padding-bottom: 94px;
 .container-pictures{
   width: 1200px;
   padding: 0 15px;
-  margin: 0 a;
+  margin: 0 auto;
 }
 
 .first-pics{
@@ -498,25 +498,25 @@ display: flex;
 flex-wrap: wrap;
 margin-left: -30px;
 margin-top: -30px;
-width: 1170px;
-margin: 0 auto;
+/*width: 1170px;
+margin: 0 auto;*/
 }
 
-/*.first-pics >.last-pics{
+.first-pics >.last-pics{
 outline: 1px solid black;
 margin-right: 30px;
-flex-basis: calc(100%/3 -30);
-margin-bottom: 30px;*/
+flex-basis: calc(100% / 3 -30px);
+margin-top: 30px;
 
 }
 
-.last-pics {
+/*.last-pics {
 flex-basis: calc((100% - 30)/ 3);
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 box-sizing: border-box;
 justify-content: space-between
-}
+}*/
 
 
 .team-items {
