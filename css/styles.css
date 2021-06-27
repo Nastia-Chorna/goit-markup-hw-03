@@ -30,6 +30,7 @@ font-size: 44px;
 line-height: 1.3;
 color: #FFFFFF;
 text-align: center;
+margin-top: 0;
 }
 
 .box {
@@ -44,6 +45,7 @@ text-align: center;
   margin: 0 auto;
   background-color: #2F303A;
   max-width: 1600px;
+  
 }
 
 
@@ -113,6 +115,8 @@ padding: 6px 22px;
 background-color: #F5F4FA;
 border: transparent;
 border-radius: 4px;
+font-family: Roboto;
+font-weight: 500;
 }
 
 .button-one:hover,
@@ -477,7 +481,8 @@ padding-bottom: 94px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  outline: 1px solid #EEEEEE;
+  border: 1px solid #EEEEEE;
+  border-top: none;
 }
 
 .container-pictures{
